@@ -195,45 +195,57 @@ code {
   font-size: 0.92rem;
 }
 
-/* 메뉴 뽑기 */
-.picker-result {
-  margin: 0.5rem 0 1rem;
-  padding: 1.5rem 1rem;
-  background: var(--ok-bg);
-  border-radius: var(--radius);
-  color: var(--ok);
-  font-size: 1.75rem;
-  font-weight: 700;
-  text-align: center;
-  overflow-wrap: anywhere;
+/* 소개 */
+.intro {
+  margin: 0;
 }
 
-.picker-button {
-  width: 100%;
-  padding: 0.85rem 1rem;
-  background: var(--accent);
-  border: none;
-  border-radius: var(--radius);
-  color: #ffffff;
-  font-family: inherit;
+/* 작업물 목록 */
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.work-item {
+  display: grid;
+  gap: 0.4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.work-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.work-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.work-title {
+  margin: 0;
   font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
 }
 
-.picker-button:hover {
-  filter: brightness(1.08);
-}
-
-.picker-count {
-  margin: 0.75rem 0 0;
+.work-period {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  text-align: center;
+  font-size: 0.85rem;
 }
 
-/* 후보 메뉴 목록 */
-.menu-chips {
+.work-description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+/* 태그 / 링크 칩 */
+.tag-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -242,7 +254,7 @@ code {
   gap: 0.5rem;
 }
 
-.menu-chip {
+.tag {
   padding: 0.3rem 0.7rem;
   background: var(--code-bg);
   border: 1px solid var(--border);
