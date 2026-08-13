@@ -6,5 +6,5 @@
   "department": "AI 교육",
   "domain": "yuns-portfolio.com",
   "port": 3000,
-  "database": false
+  "database": true
 }
